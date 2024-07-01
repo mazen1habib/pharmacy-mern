@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.sec1-home{
+  width: 100%;
+  height: 86vh;
+  background: linear-gradient(90deg, #28B5BB 0%, #FFF 100%);
+  position: relative;
+}
+.sec1-home img{
+  width: 1200px;
+  height: 560px;
+}
+.pd-home{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 86vh;
+}
+.pd-old{
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+  margin-top: 60px;
+  margin-left: 40px;
+
+}
+.pd-old h2{
+  font-family:  "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.pd-old h1{
+  font-family:  "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: white;
+}
+.pd-old p{
+  font-family:  "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+.b1  {
+  display: inline-block;
+  border-radius: 40px;
+  background-color: rgb(255, 66, 66);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+ .b2{
+  display: inline-block;
+  border-radius: 40px;
+  background-color: rgb(248, 184, 8);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+ 
+ button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ button:hover span {
+  padding-right: 15px;
+ }
+ 
+ button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }

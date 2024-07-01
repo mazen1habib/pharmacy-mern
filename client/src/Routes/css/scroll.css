@@ -1,0 +1,71 @@
+
+.scrollup .button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+
+
+    position: fixed;
+    z-index: 77777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 20px;
+    transition:1s;
+    cursor: pointer;
+    width: 40px;
+    height: 40px
+  }
+  
+ .scrollup .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .scrollup .svgIcon path {
+    fill: white;
+  }
+  
+ .scrollup .button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(12, 8, 27);
+    align-items: center;
+  }
+  
+ .scrollup .button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+ .scrollup .button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+ .scrollup .button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  

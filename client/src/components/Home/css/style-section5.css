@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.mySwiper{
+    width: 100%;
+    height: 60vh;
+}
+.mySwiper .banner1{
+    background-image: url('../../../images/130324_majestic_store_desktop_size_.webp');
+    background-size:cover;
+
+    background-repeat: no-repeat;
+}
+.mySwiper .banner2{
+    background-image: url('../../../images/best_sellers.webp');
+    /* background-size:contain; */
+    background-size:cover ;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.mySwiper .banner3{
+    background-image: url('../../../images/130732_cerave_desktop_size_opton_1.webp');
+    /* background-size:contain; */
+    background-size:cover ;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+.mySwiper .banner4{
+    background-image: url('../../../images/main_slider_fresh_tint.webp');
+    /* background-size:contain; */
+    background-size:cover ;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.mySwiper .banner4 h2 ,.mySwiper .banner2 h2{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 40px;
+     
+}
+.mySwiper .banner4 p ,.mySwiper .banner2 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+.mySwiper .banner5{
+    background-image: url('../../../images/130732_cerave_desktop_size_opton_1.webp');
+    /* background-size:contain; */
+    background-size:cover ;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,229 @@
+
+.con{
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+.con h1{
+   color: rgb(95, 70, 119);
+}
+.containerproductc{
+   width: 90%;
+   min-height: 50vh;
+   display: flex;
+   flex-wrap: wrap;
+   /* margin-left: 180px; */
+   /* margin-top: 30px; */
+   gap: 30px;
+  }
+  .containerproductc .productc{
+   width:260px;
+   height: 350px;
+   margin-left: 30px;
+  text-align: center;
+   box-shadow: rgba(192, 211, 230, 0.2) 0px 8px 24px;
+  }
+  .containerproductc .productc .image-mean-sec4{
+   width: 290px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+  }
+  .containerproductc .productc h4{
+    margin-right: 60px;
+  }
+  .containerproductc .productc img{
+   max-width: 180px;
+    max-height: 170px;
+    object-fit: cover;
+    padding-top: 20px;
+    margin-left: 40px;
+}   
+  .containerproductc .productc .condatac{
+   width: 260px;
+   height: 150px;
+   padding-left: 20px;
+  }
+  .containerproductc .productc .condatac h3{
+      color: red;
+  }
+  .containerproductc .productc .condatac h3 span {
+      text-decoration-line: line-through;
+      color: rgba(0, 0, 0, 0.3);
+  }
+  .containerproductc .productc .condatac img{
+      width: 100px;
+      height: 30px;
+  }
+ 
+ 
+ 
+ 
+  .button {
+   --width: 150px;
+   --height: 35px;
+   --tooltip-height: 35px;
+   --tooltip-width: 90px;
+   --gap-between-tooltip-to-button: 18px;
+   --button-color: #222;
+   --tooltip-color: #fff;
+   width: var(--width);
+   height: var(--height);
+   background: var(--button-color);
+   position: relative;
+   text-align: center;
+   border-radius: 0.45em;
+   font-family: "Arial";
+   transition: background 0.3s;
+   margin-left: 100px;
+ }
+ 
+ .button::before {
+   position: absolute;
+   content: attr(data-tooltip);
+   width: var(--tooltip-width);
+   height: var(--tooltip-height);
+   background-color: #555;
+   font-size: 0.9rem;
+   color: #fff;
+   border-radius: .25em;
+   line-height: var(--tooltip-height);
+   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+   left: calc(50% - var(--tooltip-width) / 2);
+ }
+ 
+ .button::after {
+   position: absolute;
+   content: '';
+   width: 0;
+   height: 0;
+   border: 10px solid transparent;
+   border-top-color: #555;
+   left: calc(50% - 10px);
+   bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+ }
+ 
+ .button::after,.button::before {
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+ }
+ 
+ .text {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .button-wrapper,.text,.icon {
+   overflow: hidden;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   color: #fff;
+ }
+ 
+ .text {
+   top: 0
+ }
+ 
+ .text,.icon {
+   transition: top 0.5s;
+ }
+ 
+ .icon {
+   color: #fff;
+   top: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .icon svg {
+   width: 24px;
+   height: 24px;
+ }
+ 
+ .button:hover {
+   background: #e42f2f;
+ }
+ 
+ .button:hover .text {
+   top: -100%;
+ }
+ 
+ .button:hover .icon {
+   top: 0;
+ }
+ 
+ .button:hover:before,.button:hover:after {
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ .button:hover:after {
+   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+ }
+ 
+ .button:hover:before {
+   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* .container-sec4-home{
+    width:100% ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .container-sec4-home .container-sec4-home-mean{
+   width: 90%;
+   min-height: 100vh;
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   flex-wrap: wrap;
+ }
+ .container-sec4-home .container-sec4-home-mean .data-sec4-home{
+   width:260px;
+ height: 430px;
+    display: flex;
+    gap: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+ }
+ .container-sec4-home .container-sec4-home-mean .data-sec4-home img {
+   width: 100px;
+   height: 100px;
+ } */

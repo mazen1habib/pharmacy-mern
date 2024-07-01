@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.consec7{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(239, 107, 107);
+    
+}
+.consec7 .line{
+    width: 2px;
+    height:20vh ;
+    background-color: lavenderblush;
+}
+.consec7 .condata {
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+    gap: 10px;
+}
+.condata h3{
+    font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+}
+.condata p{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.condata .h3-2{
+    margin-top: 20px;
+}
+.condata .h3-3{
+    margin-top: 10px;
+}
+.consec7 .condata .ig1{
+max-width: 100px;
+max-height: 100px;
+margin-left: 120px;
+}
+.consec7 .condata .ig2 {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 140px;
+    padding-top: 20px;
+    }
+    .consec7 .condata .ig3 {
+        max-width: 100px;
+        max-height: 100px;
+        margin-left: 130px;
+        }
+.condata p{
+    color: var(--text--color--) ;
+}
+
+
+
+
+
+/* Note that you only needs to edit the config to customize the button! */
+
+.plusButton {
+    /* Config start */
+    --plus_sideLength: 2.5rem;
+    --plus_topRightTriangleSideLength: 0.9rem;
+    /* Config end */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(176, 88, 88);
+    width: var(--plus_sideLength);
+    height: var(--plus_sideLength);
+    background-color: #c85d5d;
+    overflow: hidden;
+  }
+  
+  .plusButton::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+  }
+  
+  .plusButton:hover {
+    cursor: pointer;
+  }
+  
+  .plusButton:hover::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+  }
+  
+  .plusButton:focus-visible::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+  }
+  
+  .plusButton>.plusIcon {
+    fill: white;
+    width: calc(var(--plus_sideLength) * 0.7);
+    height: calc(var(--plus_sideLength) * 0.7);
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+  }
+  
+  .plusButton:hover>.plusIcon {
+    fill: black;
+    transform: rotate(180deg);
+  }
+  
+  .plusButton:focus-visible>.plusIcon {
+    fill: black;
+    transform: rotate(180deg);
+  }

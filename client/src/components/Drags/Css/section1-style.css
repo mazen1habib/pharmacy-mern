@@ -1,0 +1,10 @@
+.con1-sec1-drags{
+    width: 98.4%;
+    height: 10vh;
+    background-color: rgb(195, 211, 211);
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+
+    align-items: center;
+}
